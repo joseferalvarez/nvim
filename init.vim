@@ -5,6 +5,7 @@ set showcmd
 set encoding=utf-8
 set showmatch
 set  relativenumber
+set sw=2
 
 call plug#begin('~/.vim/plugged')
 
