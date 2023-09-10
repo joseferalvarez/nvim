@@ -4,13 +4,13 @@ syntax enable
 set showcmd
 set encoding=utf-8
 set showmatch
-set  relativenumber
+set relativenumber
 set sw=2
 
 call plug#begin('~/.vim/plugged')
 
-" GRUVBOX themes
-Plug 'sainnhe/gruvbox-material'
+" One Dark themes
+Plug 'navarasu/onedark.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
@@ -35,14 +35,15 @@ Plug 'Yggdroot/indentLine'
 " Archives
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
-
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
-"GRUVBOX config
-set background=dark
-let g:gruvbox_material_background='medium'
-colorscheme gruvbox-material
+
+" One dark themes
+let g:onedark_config = {
+    \ 'style': 'darker',
+\}
+colorscheme onedark
 
 " LSP config
 lua << EOF
